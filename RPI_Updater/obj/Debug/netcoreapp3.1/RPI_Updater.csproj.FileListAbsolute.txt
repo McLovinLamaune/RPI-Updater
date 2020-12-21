@@ -1,0 +1,17 @@
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\RPI_Updater.exe
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\RPI_Updater.deps.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\RPI_Updater.runtimeconfig.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\RPI_Updater.runtimeconfig.dev.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\RPI_Updater.dll
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\RPI_Updater.pdb
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.AssemblyInfo.cs
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.dll
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.pdb
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.genruntimeconfig.cache
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.csproj.CopyComplete
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\configuration.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\manifest.json
