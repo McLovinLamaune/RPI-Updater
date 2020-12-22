@@ -23,7 +23,13 @@ namespace RPI_Updater.Managers
             try
             {
                 _reader = new StreamReader(_path);
-                Content = JsonConvert.DeserializeObject<T>(_reader.ReadToEnd());
+                string doc = _reader.ReadToEnd();
+                _reader.Close();
+                if(doc.Length < 10)
+                {
+                    return "Bad file format";
+                }
+                Content = JsonConvert.DeserializeObject<T>(doc);
                 return null;
             }
             catch(Exception ex)
