@@ -1,6 +1,7 @@
 ﻿using RPI_Updater.Managers;
 using RPI_Updater.Models;
 using System;
+using System.IO;
 
 namespace RPI_Updater
 {
@@ -10,6 +11,7 @@ namespace RPI_Updater
         {
             LoggerManager logger = LoggerManager.Instance;
             logger.Log(LogTag.INFO, "RPI UPDATER");
+
             logger.Log(LogTag.INFO, "Reading configuration file...");
             JsonFileManager<ConfigurationModel> configuration = new JsonFileManager<ConfigurationModel>("configuration.json");
             string errorCfgMsg = configuration.Initialize();
@@ -26,11 +28,18 @@ namespace RPI_Updater
             string errorMfsMsg = manifest.Initialize();
             if (errorMfsMsg != null)
             {
+                //First application starting
                 logger.Log(LogTag.CRITICAL, "Unable to read manifest file: " + errorMfsMsg);
                 return;
             }
 
             logger.Log(LogTag.INFO, "Manifest file version: " + manifest.Content.Version);
+
+            logger.Log(LogTag.INFO, "Cheking content directory...");
+            if (!Directory.Exists("content"))
+            {
+                Directory.CreateDirectory("content");
+            }
 
             Console.ReadKey();
         }
