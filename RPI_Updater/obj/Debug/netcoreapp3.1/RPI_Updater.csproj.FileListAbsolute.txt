@@ -15,3 +15,4 @@ C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\Newt
 C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\obj\Debug\netcoreapp3.1\RPI_Updater.csproj.CopyComplete
 C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\configuration.json
 C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\manifest.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Debug\netcoreapp3.1\RestSharp.dll

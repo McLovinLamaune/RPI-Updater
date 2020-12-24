@@ -2,6 +2,7 @@
 using RPI_Updater.Models;
 using System;
 using System.IO;
+using System.Net;
 
 namespace RPI_Updater
 {
@@ -10,6 +11,8 @@ namespace RPI_Updater
         static void Main(string[] args)
         {
             LoggerManager logger = LoggerManager.Instance;
+            ApiFileManager apiFile = ApiFileManager.Instance;
+
             logger.Log(LogTag.INFO, "RPI UPDATER");
 
             logger.Log(LogTag.INFO, "Reading configuration file...");
@@ -35,10 +38,47 @@ namespace RPI_Updater
 
             logger.Log(LogTag.INFO, "Manifest file version: " + manifest.Content.Version);
 
-            logger.Log(LogTag.INFO, "Cheking content directory...");
+            logger.Log(LogTag.INFO, "Cheking directories...");
             if (!Directory.Exists("content"))
             {
                 Directory.CreateDirectory("content");
+            }
+            if (!Directory.Exists("packages"))
+            {
+                Directory.CreateDirectory("packages");
+            }
+
+            logger.Log(LogTag.INFO, "Retreiving last manifest from server...");
+
+            bool manifestDlIsOk = apiFile.DownloadFile("manifest.json", "content/manifest_last.json");
+            if(!manifestDlIsOk)
+            {
+                logger.Log(LogTag.ERROR, "Retreive KO");
+                return;
+            }            
+
+            JsonFileManager<ManifestModel> manifestLast = new JsonFileManager<ManifestModel>("content/manifest_last.json");
+            string errorMfsLastMsg = manifestLast.Initialize();
+
+           
+            logger.Log(LogTag.INFO, "Last manifest file version: " + manifestLast.Content.Version);
+
+            if(manifest.Content == manifestLast.Content)
+            {
+                logger.Log(LogTag.INFO, "Manifest already up to date");
+                return;
+            }
+
+            logger.Log(LogTag.INFO, "Manifest not up to date");
+
+            foreach(PackageModel package in manifestLast.Content.Packages)
+            {
+                string packagePath = string.Concat("packages", "/", package.Name);
+
+                if (!Directory.Exists(packagePath))
+                {
+                    Directory.CreateDirectory(packagePath);
+                }
             }
 
             Console.ReadKey();

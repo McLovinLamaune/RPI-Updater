@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ep+QWiS1K5ma29NDBrT2ZbTZXMihbQ2RA6ewNl1qdvqvJbJ7hUxY6NNElJMPmTVBGAx05RB3PNHNglbu9gyFNQ==",
+  "dgSpecHash": "pIaZZcKOJ8IR1Kt1QrEila2QbVyiM7G0u3whZRzzTjW1WrBCztS1kM5vqTj/7RAoRjZOEfRzGwe2Kz4M7BwOGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\source\\repos\\RPI_Updater\\RPI_Updater\\RPI_Updater.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
   ],
   "logs": []
 }

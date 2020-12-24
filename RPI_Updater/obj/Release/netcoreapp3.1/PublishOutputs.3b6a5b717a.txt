@@ -1,0 +1,9 @@
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\configuration.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\manifest.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\RPI_Updater.exe
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\RPI_Updater.dll
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\RPI_Updater.deps.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\RPI_Updater.runtimeconfig.json
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\RPI_Updater.pdb
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\RPI_Updater\RPI_Updater\bin\Release\netcoreapp3.1\publish\RestSharp.dll
